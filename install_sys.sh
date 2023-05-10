@@ -127,7 +127,7 @@ mv comp /mnt/comp
 
 # Grab our chroot script
 curl https://raw.githubusercontent.com/crypticspaghetti\
-    /arch_installer/master/install_chroot.sh > /mnt/install_chroot.sh
+    /arch_installer/main/install_chroot.sh > /mnt/install_chroot.sh
 
 arch-chroot /mnt bash install_chroot.sh
 
