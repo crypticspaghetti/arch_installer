@@ -79,9 +79,9 @@ config_user
 echo "$name" > /tmp/username
 
 dialog --title "Continue installation?" --yesno \
-    "Do you want to install your apps and dotfiles?" \
-    10 60 \
-    && curl https://raw.githubusercontent.com/crypticspaghetti\
-    /arch_installer/main/install_apps.sh > /tmp/install_apps.sh \
-    && bash /tmp/install_apps.sh
+"Do you want to install your apps and dotfiles?" \
+10 60 \
+&& curl https://raw.githubusercontent.com/crypticspaghetti\
+/arch_installer/main/install_apps.sh > /tmp/install_apps.sh \
+&& bash /tmp/install_apps.sh
 
