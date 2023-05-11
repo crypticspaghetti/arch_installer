@@ -3,7 +3,7 @@
 # every script you plan to run on your computer.
 
 # Install script dependency
-pacman -Syu dialog
+pacman -Sy dialog
 
 # Sync time and date via network
 timedatectl set-ntp true
