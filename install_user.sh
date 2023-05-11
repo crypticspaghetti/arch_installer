@@ -10,7 +10,7 @@ aur_install() {
         && cd "$1" \
         && makepkg --noconfirm -si \
         && cd - \
-        && rm "$1" "$1.tar.gz"
+        && rm -rf "$1" "$1.tar.gz"
 }
 
 aur_check() {
