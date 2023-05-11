@@ -2,7 +2,7 @@
 
 name=$(cat /tmp/username)
 
-apps_path=$(cat /tmp/apps.csv)
+apps_path="/tmp/apps.csv"
 # Get the list of apps that I typically install on a new system
 curl https://raw.githubusercontent.com/crypticspaghetti\
 /arch_install/main/apps.csv > $apps_path
