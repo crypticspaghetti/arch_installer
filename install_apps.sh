@@ -33,7 +33,7 @@ dialog --checklist \
 # Take the group choices and grab all the app package names from the downloaded
 # list that are in those groups
 choices=$(cat app_choices) && rm app_choices
-selection="^$(echo $choices) | sed -e 's/ /,|^/g),"
+selection="^$(echo $choices | sed -e 's/ /,|^/g'),"
 lines=$(grep -E "$selection" "$apps_path")
 count=$(echo "$lines" | wc -l)
 packages=$(echo "$lines" | awk -F, {'print $2'})
