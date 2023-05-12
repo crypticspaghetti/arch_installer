@@ -5,7 +5,7 @@ name=$(cat /tmp/username)
 apps_path="/tmp/apps.csv"
 # Get the list of apps that I typically install on a new system
 curl https://raw.githubusercontent.com/crypticspaghetti\
-/arch_install/main/apps.csv > $apps_path
+/arch_installer/main/apps.csv > $apps_path
 
 dialog --title "Welcome!" \
     --msgbox "Welcome to the installation script for your apps and dotfiles!" \
